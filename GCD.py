@@ -12,8 +12,18 @@ def main():
 #GCD finder
 def GCD(a, b):
     notComplete = True
+    answer = 0
+    t = 0
     while notComplete:
-        pass
+        if a == b:
+            answer = a
+            notComplete = False
+        else:
+            if a>b:
+                a -= b
+            elif b>a:
+                b -= a
+    return answer
 
 def LCM(gcd, nums):
     #do stuff
