@@ -6,7 +6,7 @@ def main():
     for x in range(aCount):
         bNums = [int(x) for x in input().split()]
         GCDh = GCD(bNums[0], bNums[1])
-        print (GCDh, LCM(GCDh, bNums), end=" ")
+        print ("(" + str(GCDh), str(LCM(GCDh, bNums)) + ")", end=" ")
         print (LCM(bNums))
 
 #GCD finder
