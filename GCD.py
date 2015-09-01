@@ -6,8 +6,7 @@ def main():
     for x in range(aCount):
         bNums = [int(x) for x in input().split()]
         GCDh = GCD(bNums[0], bNums[1])
-        print ("(" + str(GCDh), str(LCM(GCDh, bNums)) + ")", end=" ")
-        print (LCM(bNums))
+        print ("(" + str(GCDh), str(int(LCM(GCDh, bNums))) + ")", end=" ")
 
 #GCD finder
 def GCD(a, b):
@@ -25,7 +24,8 @@ def GCD(a, b):
                 b -= a
     return answer
 
+#lowest common multiplier
 def LCM(gcd, nums):
-    #do stuff
+    return (nums[0] * nums[1]) / gcd
 
 main()
